@@ -10,6 +10,12 @@ body {
 }
 
 a {
+    color: black;
+    text-decoration: underline;
+}
+
+a:active {
+    color: black;
     text-decoration: underline;
 }
 
@@ -65,7 +71,7 @@ h1 {
 }
 
 #content-box-3 {
-    background-image: url(images/metro-banner.png);
+    background-image: url(images/transit-banner.png);
     flex-grow: 2
 }
 
@@ -171,6 +177,11 @@ h2 {
     width: 70vw;
 }
 
+.oversized {
+    height: 70vh;
+    width: auto;
+}
+
 h3 {
     background-color: black;
     color: white;
@@ -189,14 +200,29 @@ h3 {
     width: calc(100% - 2vw);
 }
 
+.information-container > a {
+    background-color: white;
+    display: block;
+    font-size: clamp(1rem, 1vw, 3rem);
+    margin: 0;
+    padding: 1vw;
+    width: calc(100% - 2vw);
+}
+
 @media (max-width: 1000px) {
+    .information-container {
+        width: 90vw;
+    }
+
     .image-file {
         width: 100%;
     }
 
-    .information-container {
-        width: 90vw;
+    .oversized {
+        height: auto;
+        width: 100%;
     }
+
   }
 
 
@@ -233,3 +259,18 @@ h3 {
 #one-thousand {
     background-color: #840a55;
 }
+
+/* Transit Maps */
+
+#bristol {
+    background-color: #1006a0;
+}
+
+#manchester {
+    background-color: #80725e;
+}
+
+#us {
+    background-color: #1006a0;
+}
+
