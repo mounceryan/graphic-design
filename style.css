@@ -10,7 +10,7 @@ body {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 h1 {
@@ -102,15 +102,34 @@ h1 {
     }
   }
 
+.bottom-bar {
+    background-color: black;
+    margin: 3vw 0 0 0;
+    height: 5vw;
+    width: 100%;
+}
+
+.bottom-bar > p {
+    color: white;
+    font-size: clamp(1rem, 1vw, 3rem);
+    font-weight: bold;
+    height: 5vw;
+    line-height: 5vw;
+    text-align: center;
+}
+
 /* Design Pages */
 
 .home-button {
     background-color: white;
     color: black;
+    display: inline-block;
     font-weight: bold;
-    margin: 0vw 6vw 2vw 6vw;
+    margin: -1vw 0 1vw 6vw;
     padding: 1vw;
+    text-align: center;
     transition: 0.2s;
+    width: 8vw;
 }
 
 .home-button:hover {
@@ -118,32 +137,21 @@ h1 {
     color: white;
 }
 
-.information {
+.about-page {
+    background-color: white;
+    color: black;
+    display: inline-block;
     font-size: clamp(1rem, 1vw, 3rem);
-    margin: 1vw 6vw;
-    padding: 1vw 0 0 0;
-    width: 88vw;
+    margin: -1vw 6vw 1vw 0;
+    padding: 1vw;
 }
 
 h2 {
+    background-color: black;
     color: white;
     font-size: clamp(2rem, 3vw, 5rem);
     margin: 1vw 0;
     padding: 1vw 6vw;
-}
-
-/* Banknotes */
-
-#five {
-    background-color: #408fde;
-}
-
-#ten {
-    background-color: #ffa300;
-}
-
-#twenty {
-    background-color: #e89cae;
 }
 
 .design-container {
@@ -152,12 +160,11 @@ h2 {
 }
 
 .information-container {
-    background-color: crimson;
     align-self: center;
     flex-grow: 1;
 }
 
-.banknotes {
+.image-file {
     left: 0;
     margin:0;
     top: 0;
@@ -183,7 +190,46 @@ h3 {
 }
 
 @media (max-width: 1000px) {
-    .banknotes {
+    .image-file {
         width: 100%;
     }
+
+    .information-container {
+        width: 90vw;
+    }
   }
+
+
+/* Banknotes */
+
+#five {
+    background-color: #408fde;
+}
+
+#ten {
+    background-color: #ffa300;
+}
+
+#twenty {
+    background-color: #e89cae;
+}
+
+#twenty-five {
+    background-color: #007a34;
+}
+
+#fifty {
+    background-color: #ffcd00;
+}
+
+#one-hundred {
+    background-color: #da291c;
+}
+
+#five-hundred {
+    background-color: #1006a0;
+}
+
+#one-thousand {
+    background-color: #840a55;
+}
