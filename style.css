@@ -156,6 +156,8 @@ h2 {
     background-color: black;
     color: white;
     font-size: clamp(2rem, 3vw, 5rem);
+    line-height: clamp(2rem, 3vw, 5rem);
+    height: clamp(2rem, 3vw, 5rem);
     margin: 1vw 0;
     padding: 1vw 6vw;
 }
